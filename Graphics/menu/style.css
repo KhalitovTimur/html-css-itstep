@@ -1,0 +1,60 @@
+body {
+    width: 800px;
+    margin: 20px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: rgb(163 159 159 / 15%);
+}
+
+#navbar ul {
+    width: 30%;
+    list-style-type: none;
+    margin: 0;
+    padding: 1px;
+}
+
+#navbar a {
+    display: block;
+
+    padding: 29px 81px;
+    padding-top: 30px;
+
+    background-color: gray;
+    background-size: 76px;
+    background-repeat: no-repeat;
+    background-position: 2px 4px;
+
+    transition-property: background-color;
+    transition-duration: 3s;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1) ;
+
+    color: white;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: rgb(100, 98, 98);
+    transition-property: background-color;
+    transition-duration: 3s;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}
+
+#navbar a.EDIT-img {
+    background-image: url(../images/icons_hw_module_3/edit.png);
+}
+
+#navbar a.FAVORITES-img {
+    background-image: url(../images/icons_hw_module_3/favorites.png);
+}
+
+#navbar a.HISTORY-img {
+    background-image: url(../images/icons_hw_module_3/history.png);
+}
+
+#navbar a.SECURITY-img {
+    background-image: url(../images/icons_hw_module_3/security.png);
+}
+
+#navbar a.SETTINGS-img {
+    background-image: url(../images/icons_hw_module_3/settings.png);
+}

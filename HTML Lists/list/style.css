@@ -1,0 +1,17 @@
+div {
+    width: 900px;
+    background-color: #ececec;
+    margin: 20px auto;
+    padding: 29px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+blockquote {
+    margin: 1px;
+    color: #908b8b;
+}
+
+span {
+    color: mediumblue;
+}

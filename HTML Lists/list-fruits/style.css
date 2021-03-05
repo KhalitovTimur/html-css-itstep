@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(224, 216, 216);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+span {
+    background-color: #920000;
+    padding: 8px;
+}
+
+.container {
+    width: 700px;
+    background-color:#ec7f7f;
+    margin: 20px auto;
+}
+
+.list-fruits {
+    padding: 8px;
+}
+
+.list-fruits li {
+    background-color: #d54646;
+    list-style-position: inside;
+    margin: 13px;
+    padding: 8px;
+    color: white;
+}
+

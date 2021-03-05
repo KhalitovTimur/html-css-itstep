@@ -1,0 +1,34 @@
+body {
+    width: 1000px;
+
+    margin: 20px auto;
+    background-color: rgb(163 159 159 / 15%);
+}
+
+.center {
+    text-align: center;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.product-box {
+    width: 130px;
+
+    padding: 20px;
+    margin: 10px;
+
+    border: 1px solid black;
+    border-radius: 20px;
+
+    float: left;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+}
+

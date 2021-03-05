@@ -1,0 +1,50 @@
+
+.wrapper {
+    width: 705px;
+    height: 600px;
+    margin: 50px auto;
+    background-color: rgb(163 159 159 / 15%);
+}
+
+.wrapper div {
+    height: 200px;
+    background-repeat: no-repeat;
+    transition-property:filter, background-size;
+    transition-duration: .3s, 1s;
+}
+
+.img-right {
+    background-image: url(../images/Screenshot_6-2.png);
+    background-position: 351px 0px;
+    background-size: 50%;
+}
+
+.span-1 {
+    position: relative;
+    top: 86px;
+    right: -103px;
+}
+
+.img-left {
+    width: 50%;
+    background-image: url(../images/Screenshot_6-2.png);
+    background-size: 100%;
+} 
+
+.span-2 {
+    position: relative;
+    top: -113px;
+    right: -464px;
+}
+
+
+.img-right:hover {
+    background-size: 55%;
+    filter:grayscale(100%);
+}
+
+.wrap:hover .img-left {
+    background-size: 105%;
+    filter:grayscale(100%);
+}
+

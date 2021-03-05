@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(163 159 159 / 15%);
+}
+
+hr {
+    height: 1.5px;
+    margin: 0;
+    background-color: rgb(35, 136, 102);
+    transform: rotateZ(355deg);
+    transform-origin: center right;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+    border: 3px solid rgb(35, 136, 102);
+    border-radius: 50%;      
+}
+
+.animation {
+    animation-name: clock;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: center right;
+}
+/* Отличное решение с единым классом для анимируемых элементов! */
+
+#big-arrow {
+    width: 180px;
+    position: relative;
+    top: 204px;
+    right: -18px;
+    animation-duration: 3s;
+}
+
+#little-arrow {
+    width: 138px;
+    position: relative;
+    top: 200px;
+    right: -60px;
+    animation-duration: 12s;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    top: 193px;
+    right: -192px;
+    border-radius: 50%;
+    background-color: rgb(35, 136, 102);
+}
+
+@keyframes clock {
+    100% {
+        transform: rotateZ(355deg)
+    }
+}
+/* Замечательное и краткое правило анимации */

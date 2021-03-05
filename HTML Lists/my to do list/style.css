@@ -1,0 +1,47 @@
+body {
+    background-color: #f3eaea;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    width: 700px;
+    margin: 20px auto;
+}
+
+h1 {
+    margin-left: 38px;
+}
+
+.todo-list li {
+    list-style-type: none;
+    padding: 19px 19px 19px 30px;
+    list-style-position: inside;
+    list-style-image: url(../materials_hw_module_2/icons/unchecked_16.png);
+    
+}
+
+.todo-list li span {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.todo-list li::after {
+    content: url(../materials_hw_module_2/icons/cross_8518.png);   
+}
+
+/*  */
+.todo-list li:nth-child(even) {
+    background-color:#85b5d3;
+}
+
+.todo-list > li:nth-child(odd) {
+    background-color:#7ea5be;
+}
+
+.todo-list li.first {
+    background-color: #cbc3c3;
+    text-decoration-line: line-through;
+    list-style-image: url(../materials_hw_module_2/icons/checked_16.png);
+    padding-left: 30px;  
+}
