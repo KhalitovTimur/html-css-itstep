@@ -1,0 +1,74 @@
+body {
+    width: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:rgb(7, 63, 65);
+    color: white;
+}
+
+div {
+    display: inline-block;
+}
+
+h1 {
+    margin-bottom: 50px;
+    font-size: 3em;
+}
+
+.color {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.container {
+    margin-left: 123px;
+    margin-top: 108px;
+}
+
+.png {
+    width: 57px;
+    height: 55px;
+    
+    background-image: url(../materials_hw_module_6_7/icons_hw/account.png);
+    background-repeat: no-repeat;
+    background-size: 56px;
+    float: left;
+}
+
+.wrapper div {
+    margin-left: 26px;
+}
+
+@media screen and (max-width: 600px) {
+    .h1 {
+        font-size: 40px;
+    }
+
+    .container {
+        margin-left: 39px;
+        margin-top: 46px;
+    }
+
+    .png {
+        width: 100px;
+        height: 91px;
+
+        margin-top: 30px;
+        background-size: 91px;
+    }
+    
+    .wrapper {
+        display: block;
+
+        margin-top: 26px;
+        margin-left: 79px;
+        font-size: 1.2em;
+    }
+
+    .wrapper div {
+        margin-left: 30px;
+    }
+
+    .color {
+        font-size: 1.2em;
+    }
+    
+}

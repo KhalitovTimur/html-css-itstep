@@ -1,0 +1,95 @@
+body {
+    box-sizing: border-box;
+    background-color: #e2e2e2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-1 {
+    width: calc(100% - 407px);
+    margin-top: 20px;
+    margin-left: 29px;
+    float: left;
+}
+
+.wrap-img {
+    margin-top: 20px;
+    float: right;
+}
+
+figure {
+    width: 300px;
+    margin-right: 29px;
+}
+
+img {
+    position: relative;
+    top: 4px;
+    width: 100%;
+    border-radius: 9px 9px 0px 0px;
+}
+
+figcaption {
+    background-color:rgb(43, 74, 87);
+    border-radius: 0px 0px 9px 9px;
+    font-size: 13px;
+    color: white;
+    text-align: right;
+}
+
+.figcaption-1 {
+    height: 40px;
+    padding-top: 10px;  
+}
+
+.figcaption-2 {
+    height: 59px;
+    padding-top: 10px;  
+}
+
+.margin {
+    margin-top: 0;
+    margin-right: 10px;
+}
+
+.container-2 {
+    width: calc(100% - 407px);
+    margin-left: 29px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .container-1, .container-2 {
+        width: 90%;
+    }
+
+    .wrap-img {
+        width: 780px;
+        float: none;
+    }
+
+    figure {
+        display: inline-block;
+        margin: 24px;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+
+    .wrap-img {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    figure {
+        width: auto;
+        display: block;
+    }
+
+    img {
+        margin-top: 17px;     
+    }
+
+}
+
+/* Всё отлично! */
