@@ -1,0 +1,123 @@
+body {
+    box-sizing: border-box;
+    background-color: #d9d9d9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'user1 message1 space1'
+    'space2 message2 user2'
+    'user3 message3 space3'
+    'space4 message4 user4'
+    'user5 message5 space5'
+    'space6 message6 user6';
+    row-gap: 10px;
+    justify-content: center;
+
+    margin-top: 40px;
+}
+
+
+.width {
+    width: 400px;
+    padding: 0px 20px;
+}
+
+.grid-element-2, .grid-element-8,.grid-element-14 {
+    background-color:#ff9bbb;
+    border-radius: 20px 20px 20px 0px;
+}
+
+.grid-element-5, .grid-element-11, .grid-element-17 {
+    background-color: lightskyblue;
+    border-radius: 20px 20px 0px 20px;
+}
+
+.user-name-girl {
+    float: left;
+    margin-top: 7px;
+}
+
+.user-name-boy {
+    float: right;
+    margin-top: 10px;
+}
+
+.color {
+    color:#0000006e;
+}
+
+.grid-element-1 {
+    grid-area: user1;
+}
+
+.grid-element-2 {
+    grid-area: message1;
+}
+
+.grid-element-3 {
+    grid-area: space1;
+}
+
+.grid-element-4 {
+    grid-area: space2;
+}
+
+.grid-element-5 {
+    grid-area: message2;
+}
+
+.grid-element-6 {
+    grid-area: user2;
+}
+
+.grid-element-7 {
+    grid-area: user3;
+}
+
+.grid-element-8 {
+    grid-area: message3;
+}
+
+.grid-element-9 {
+    grid-area: space3;
+}
+
+.grid-element-10 {
+    grid-area: space4;
+}
+
+.grid-element-11 {
+    grid-area: message4;
+}
+
+.grid-element-12 {
+    grid-area:user4;
+}
+
+.grid-element-13 {
+    grid-area: user5;
+}
+
+.grid-element-14 {
+    grid-area: message5;
+}
+
+.grid-element-15 {
+    grid-area: space5;
+}
+
+.grid-element-16 {
+    grid-area: space6;
+}
+
+.grid-element-17 {
+    grid-area: message6;
+}
+
+.grid-element-18 {
+    grid-area: user6;
+}
+
