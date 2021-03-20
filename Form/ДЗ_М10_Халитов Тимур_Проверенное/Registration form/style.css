@@ -1,0 +1,157 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 1200px;
+    margin: 18px auto;
+    background-color: rgb(216, 216, 216);
+    box-shadow: 0px 0px 13px 3px #736e6e;
+}
+
+ul {
+    margin-top: 40px;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    margin: 0;
+}
+
+input:focus {
+    outline-color: lightseagreen;
+}
+
+.form-control {
+    width: calc(50% - 70px);
+    margin: 0 35px;
+    margin-top: 30px;
+}
+
+.registr-list li {
+    padding-left: 40px;
+    background-image: url(../icons_hw_module_10/username.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 31px;
+}
+
+.registr-list li:nth-of-type(2) {
+    background-image: url(../icons_hw_module_10/email.png);
+}
+
+.registr-list li:nth-of-type(3) {
+    background-image: url(../icons_hw_module_10/pswd.png);
+}
+
+input[type="text"], input[type="email"], input[type="password"], #gender, #date {
+    margin-bottom: 50px;
+    border-width: 0px 0px 2px 0px;
+    background-color:rgb(216, 216, 216);
+}
+
+#password:first-child, .text-name:first-child, #gender {
+    margin-right: 11%;
+}
+
+input:not(input[type="password"], .text-name, #date, input[type="checkbox"],#submit) {
+    width: 100%;
+}
+
+input:not(input[type="checkbox"]), select {
+    width: 44%;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.checkbox  {
+    margin-top: 0px;
+}
+
+.checkbox li {
+    margin-bottom: 30px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    position: relative;
+    width: 16px;
+    height: 16px;
+
+    margin: 0px;
+    margin-right: 10px;
+
+    border: 1px 1px black;
+    border-radius: 8px;
+    background-color: rgb(138, 138, 138);
+}
+
+input[type="checkbox"]::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 8px;
+    height: 8px;
+    
+    border-radius: 4px;
+    background-color: greenyellow;
+    transform: scale(0);
+}
+
+input[type="checkbox"]:checked::after {
+    transform: scale(1);
+    transition: transform .3s;
+}
+
+#submit {
+    width: 160px;
+    margin: 30px 30px 30px auto;
+    padding: 7px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 8px 2px #9c9797;
+    background-color: cadetblue;
+    color: white;
+}
+
+@media (max-width:900px) {
+
+    form {
+        width: 94%; 
+    }
+
+    .form-control {
+        width: 90vw;
+        margin: 0 30px 0px 30px;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], #gender, #date {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width:600px) {
+    input:not(input[type="checkbox"]), select {
+        width: 100%;
+    }
+}

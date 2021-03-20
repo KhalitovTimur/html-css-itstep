@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration form</title>
+</head>
+<body>
+    <form>
+        <div class="form-control">
+            <h3>Registration form</h3>
+            <ul class="registr-list">
+                <li>
+                    <input 
+                        type="text"
+                        placeholder="Username"
+                        name="text"
+                        required
+                        autofocus
+                        pattern="[^0-9]*">
+                </li>
+
+                <li>
+                    <input 
+                        type="email"
+                        placeholder="Email address"
+                        name="email">
+                </li>
+
+                <li>
+                    <input 
+                        type="password"
+                        placeholder="Password"
+                        name="password"
+                        id="password"
+                        required>
+                        
+                    <input 
+                        type="password"
+                        placeholder="Confirm password"
+                        id="password_2"
+                        name="password">
+                </li>
+            </ul>
+        </div>
+
+        <div class="form-control">
+            <h3>Personal details</h3>
+            <ul>
+                <li>
+                    <input 
+                        type="text"
+                        name="text"
+                        class="text-name"
+                        placeholder="First name"
+                        required>
+
+                    <input 
+                        type="text"
+                        name="text"
+                        class="text-name"
+                        placeholder="Last name"
+                        required> 
+                </li>
+                <li>
+                    <select name="gender" id="gender">
+                        <option 
+                            value="Male" selected>Male
+                        </option>
+
+                        <option
+                            value="Female">Female
+                        </option>
+                    </select>
+
+                    <input 
+                        type="date" 
+                        name="date" 
+                        id="date" 
+                        required>
+                </li>
+            </ul>
+        </div>
+        
+        <ul class="checkbox form-control">
+            <li>
+                <input 
+                type="checkbox" 
+                name="checked"
+                id="checked" 
+                class="checkbox">
+                <label for="checked">I want to receive mews and special offers</label>
+            </li>
+            <li>
+                <input 
+                type="checkbox" 
+                name="checked_2"
+                id="checked_2" 
+                class="checkbox">
+                <label for="checked_2">I agree with the Terms and Condition</label>
+            </li>
+        </ul>
+        <hr>
+        <input 
+            type="submit" 
+            value="SUBMIT"
+            name="submit"
+            id="submit">
+    </form>
+    
+</body>
+</html>

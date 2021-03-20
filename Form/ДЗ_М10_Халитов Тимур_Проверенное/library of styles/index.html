@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form method="GET">
+        <div class="form-control">
+            <h3>inputs</h3>
+            <input
+                type="text"
+                name="text"
+                id="text"
+                placeholder="Enter some text"
+                size="25"
+                required>
+
+            <input
+                type="text"
+                name="validText"
+                id="validText"
+                placeholder="valid text"
+                size="25"
+                required>
+
+            <input
+                type="text"
+                name="invalidText"
+                id="invalidText"
+                placeholder="invalid text"
+                size="25"
+                required>
+        </div>
+
+        <div class="form-control">
+            
+            <h3>Check boxes</h3>
+
+                <input
+                    type="checkbox"
+                    name="checked"
+                    id="checked">
+                <label for="checked" >Subscribe</label>
+
+                <input
+                    type="checkbox"
+                    name="checked_2"
+                    id="checked_2">
+                <label for="checked_2">Subscribe</label>
+        </div>
+
+        <div class="form-control">
+
+            <h3>Radio buttons </h3>
+
+            <span class="margin-gender">Gender</span>
+                <input 
+                    type="radio" 
+                    name="gender" 
+                    id="gender"
+                    value="Male">
+                    <label for="gender" class="margin-right"> Male</label>
+
+                <input 
+                    type="radio" 
+                    name="gender" 
+                    id="gender_2"
+                    value="Female">
+                <label for="gender_2">Female</label>
+            
+        </div>
+
+        <div class="form-control">
+
+            <h3>Buttons</h3>
+
+            <button 
+                type="submit"
+                id="Activc"  
+                name="submit">Activc
+            </button>
+
+            <button 
+                type="submit"
+                id="Hover"  
+                name="submit">Hover
+            </button>
+
+            <button 
+                type="submit"
+                id="Danger"  
+                name="submit">Danger
+            </button>
+
+            <button 
+                type="submit"
+                id="Hover2"  
+                name="submit">Hover
+            </button>
+
+            <button 
+                type="submit"
+                id="Disabled"  
+                name="submit"
+                disabled>Disabled
+            </button>
+
+            <button 
+                type="submit"
+                id="addition"
+                class="border-radius"  
+                name="submit">+
+            </button>
+
+            <button 
+                type="submit"
+                id="subtraction"
+                class="border-radius"  
+                name="submit">-
+            </button>
+        </div>
+
+        <div class="form-control">
+
+            <h3>Text area</h3>
+
+            <textarea 
+                name="textarea" 
+                id="textarea" 
+                cols="30" rows="10"
+                required
+                placeholder="Enter some text..."></textarea>
+        </div>
+
+    </form>
+    
+</body>
+</html>

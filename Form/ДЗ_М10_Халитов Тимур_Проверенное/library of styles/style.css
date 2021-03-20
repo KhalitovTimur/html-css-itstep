@@ -1,0 +1,175 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+    width: 80%;
+    min-width: 800px;
+
+    margin: 20px auto;
+    padding: .1px;  
+    background-color: rgb(216, 216, 216);
+}
+
+input {
+    height: 35px;
+    margin-right: 8px;
+    padding-left: 20px;
+    
+    border-radius: 4px;
+    color: green;
+    
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 95% 50%;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+}
+
+textarea {
+    width: 500px;
+    min-height: 50px;
+    max-height: 120px;
+    padding: 10px;
+    resize: vertical;
+    border-radius: 4px;
+}
+
+.form-control {
+    margin: 50px 30px;
+}
+
+#text {
+    border: 2px solid #a69f9f;
+}
+
+#validText {
+    border: 2px solid green;
+    background-image: url(../icons_hw_module_10/valid.png);
+}
+
+#validText::-webkit-input-placeholder {
+    color: green;
+}
+
+#invalidText {
+    border: 2px solid red;
+    background-image: url(../icons_hw_module_10/invalid.png);
+}
+
+#invalidText::-webkit-input-placeholder {
+    color:red;
+}
+
+.margin-gender, .margin-right {
+    margin-right: 10px;
+}
+
+input[type="radio"]::after, input[type="checkbox"]::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: green;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    appearance: none;
+    width: 50px;
+    height: 24px;
+    margin-bottom: -7px;
+    border: 2px solid green;
+    border-radius: 8px;
+}
+
+input[type="checkbox"]::after {
+    content: "";
+    width: 21px;
+    height: 16px;
+    border-radius: 5px;
+    transition: transform .3s;
+    transform: translateX(-11px)
+}
+
+#checked_2 {
+    border-color: red;
+}
+
+#checked_2::after  {
+    background-color: red;
+    border-color: red;
+}
+
+input[type="checkbox"]:checked::after {
+    transform: translateX(12px); 
+}
+
+input[type="radio"] {
+    position: relative;
+    appearance: none;
+    width: 15px;
+    height: 23px;
+    margin: 0px;
+    margin-bottom: -4px;
+    border: 2px solid green;
+    border-radius: 27px;
+}
+
+input[type="radio"]::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    transform: scale(0);
+}
+
+input[type="radio"]:checked::after {
+    transform: scale(1);
+    transition: transform .3s;
+}
+
+#Activc:hover {
+    background-color: green;
+}
+
+#Activc, #addition {
+    background-color: #29b229;
+}
+
+#Hover {
+    background-color: green;
+}
+
+#Danger, #subtraction {
+    background-color:red;
+}
+
+#Danger:hover {
+    background-color: #a20c0c;
+}
+
+#Hover2 {
+    background-color: #a20c0c;
+}
+
+#Disabled {
+    background-color: grey;
+}
+
+.border-radius {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+

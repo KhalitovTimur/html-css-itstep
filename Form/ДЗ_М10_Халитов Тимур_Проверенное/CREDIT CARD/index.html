@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit card</title>
+</head>
+<body>
+    <form method="POST" autocomplete="off">
+
+        <div class="h3-container">
+
+            <h3>CREDIT CARD DETAILS</h3>
+
+        </div>
+
+        <div class="form-control">
+            <label for="cardNumber">Card Number</label>
+            <input
+                type="text"
+                name="cardNumber"
+                id="cardNumber"
+                maxlength="18"
+                oninput="cardNumber.value = cardNumber.value.replace(/\D+/, '')"
+                placeholder="1234 5678 9012 3456"
+                size="50"
+                autofocus
+                required
+                >
+        </div>
+            
+        <div class="form-control">
+            <label for="nameOnCard">Name On Card</label>
+            <input
+                type="text"
+                name="nameOnCard"
+                id="nameOnCard"
+                size="50"
+                placeholder="Name Surname"
+                pattern="[^0-9]*"
+                required>
+        </div>
+
+        <div class="form-control">
+            <div class="date-wrap">
+                <label for="date">Expiry Date</label>
+                <input
+                    type="text"
+                    name="date"
+                    id="date"
+                    maxlength="2"
+                    oninput="date.value = date.value.replace(/\D+/, '')"
+                    placeholder="02"
+                    pattern="[0-3]{1}[0-9]{1}">
+            </div>
+
+            <input
+                type="text"
+                name="date2"
+                id="date2"
+                size="11"
+                maxlength="4"
+                oninput="date2.value = date2.value.replace(/\D+/, '')"
+                placeholder="2017"
+                required>
+                
+            <div class="password-wrap">
+                <label for="password">CVV / CVN</label>
+                <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    size="11"
+                    maxlength="3"
+                    oninput="password.value = password.value.replace(/\D+/, '')"
+                    placeholder="***"
+                    required>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>

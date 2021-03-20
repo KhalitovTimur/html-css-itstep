@@ -1,0 +1,78 @@
+
+body {
+    box-sizing: border-box;
+    background-color: rgb(216, 216, 216);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    padding-top: 12px;
+    padding-left: 80px;
+}
+
+form {
+    width: 690px;
+    height: 400px;
+
+    margin: 20px auto;
+    padding: .1px;
+    
+    background-color: #67bfbaa3;
+    border-radius: 15px;
+    background-image: url(../icons_hw_module_10/moon_flag.png);
+    background-repeat: no-repeat;
+    background-size: 287px;
+    background-position: 481px 125px;
+}
+
+label, input {
+    display: block;
+    height: 30px;
+    color: #00000087;
+}
+
+input {
+    padding-left: 10px;
+    background-color:#99d4d0 ;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+}
+
+input:focus {
+    outline-color: lightseagreen;
+}
+
+.h3-container {
+    width: 600px;
+    height: 50px;
+    margin-top: 30px;
+    color: white;
+    transform:translateX(-35px) ;
+    background-color: #d56b44;
+    z-index: 1;
+}
+
+.form-control {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+#date {
+    width: 60px;
+}
+
+#date2, .password-wrap, .date-wrap {
+    display: inline-block;
+}
+
+#date2, .password-wrap {
+    margin-left: 9px;
+}
+
+input:valid {
+    background-color: #5dbf5975;
+}
+
+input:invalid {
+    background-color: rgba(235, 157, 205, 0.281);
+} 
